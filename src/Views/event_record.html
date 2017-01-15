@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evidence</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            color: black;
+            background-color: black;
+        }
+
+        #signature {
+            height: 75px;
+        }
+
+        #signature_line {
+            width: 350px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Digital Forensics Investigation Documentation Evidence Form</h1>
+    <div>
+        <b>Evidence Item: </b>
+        <p><span>Case reference: </span><i>${CaseRef}</i></p>
+        <p><span>Item reference: </span><i>${ItemUUID}</i></p><br>
+        <b>Investigation:</b>
+        <p><span>Start date: </span><i>${StartDate}</i></p>
+        <p><span>Comments: </span><i>${Comments}</i></p>
+        <p><span>Finish date: </span><i>${StopDate}</i></p>
+    </div>
+    <hr />
+    <div id="section2">
+        <b>Investigator Details</b>
+        <p><span>Investigator: </span><i>${InvestigatorName}</i></p>
+        <hr />
+        <p id="signature"><span>Signature: </span></p><br><br>
+        <hr id="signature_line" />
+    </div>
+</body>
+</html>
